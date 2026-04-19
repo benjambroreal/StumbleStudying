@@ -1,24 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stumble Guys Hub</title>
     <style>
-        body { margin: 0; background: #000; overflow: hidden; display: flex; justify-content: center; align-items: center; height: 100vh; }
-        iframe { 
-            width: 100%; 
-            height: 100%; 
-            border: none; 
-        }
+        body { margin: 0; background: #000; overflow: hidden; display: flex; height: 100vh; }
+        iframe { width: 100%; height: 100%; border: none; }
     </style>
 </head>
 <body>
 
-    <!-- The 'sandbox' attribute prevents the game from redirecting your main page -->
+    <!-- This specific combination stops redirects while keeping the game playable -->
     <iframe 
         src="https://stumbleguys.com" 
-        sandbox="allow-forms allow-scripts allow-same-origin allow-popups allow-modals"
+        sandbox="allow-scripts allow-same-origin allow-forms"
         allow="autoplay; fullscreen; keyboard"
         allowfullscreen>
     </iframe>
